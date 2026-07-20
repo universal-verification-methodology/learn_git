@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-1.png'
+duration 25.656
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-2.png'
+duration 24.336
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-3.png'
+duration 32.328
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-4.png'
+duration 11.296
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-6.png'
+duration 24.168
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-7.png'
+duration 17.448
+file '/mnt/d/proj/designs/learning/courses/learn_git/module21-sandbox/frames/slide-7.png'

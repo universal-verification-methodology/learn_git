@@ -27,3 +27,13 @@ Unix fluency: [`../learn_unix/`](../learn_unix/). Legacy combined path: [`../lea
 - [ ] I completed Track A and/or Track B for the lab modules I care about
 - [ ] I can stage, commit, and read `git log` / `git status` without guessing
 - [ ] I have practiced at least once on [unix-git-practice](https://github.com/universal-verification-methodology/unix-git-practice) (or my own fork)
+
+## Media
+
+| Artifact | Path |
+|----------|------|
+| Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |

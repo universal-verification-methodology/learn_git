@@ -1,0 +1,53 @@
+{
+  "module": "module18-submodule-pitfalls",
+  "title": "Submodule pitfalls check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "After cloning a repo with submodules, empty submodule folders usually mean…",
+      "choices": [
+        "You still need git submodule update --init --recursive",
+        "The submodule was deleted from GitHub",
+        "You must run git bisect",
+        "Submodules never use separate repos"
+      ],
+      "answer": 0,
+      "explain": "A plain clone records gitlinks but does not populate submodule working trees until init."
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "prompt": "Detached HEAD inside a submodule at a pinned SHA is normal.",
+      "answer": true,
+      "explain": "The parent pins a specific commit; checkout is detached until you switch a branch intentionally."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "To bump a submodule version for teammates, you must…",
+      "choices": [
+        "Commit the updated gitlink in the parent repo",
+        "Only edit files locally without any commit",
+        "Delete .gitmodules",
+        "Force-push main on the parent only"
+      ],
+      "answer": 0,
+      "explain": "The parent repo stores the pin; others see the new SHA only after that commit."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "To clone and fetch submodules in one step, use…",
+      "choices": [
+        "git clone --recurse-submodules",
+        "git clone --bare only",
+        "git remote prune",
+        "git stash pop"
+      ],
+      "answer": 0,
+      "explain": "--recurse-submodules runs init/update during clone—handy for CI and fresh checkouts."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "module": "module22-wrap",
+  "title": "Git path complete check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This wrap module mainly…",
+      "choices": [
+        "Recaps what you can do and points to the next courses",
+        "Introduces a brand-new browser lab",
+        "Replaces Track A forever",
+        "Deletes your practice repository"
+      ],
+      "answer": 0,
+      "explain": "Wrap modules summarize outcomes and link the syllabus next step."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "If you mostly used browser labs, a good next step is…",
+      "choices": [
+        "Spend a short real-Git session on remotes and the sandbox",
+        "Never open a terminal again",
+        "Force-push the curriculum repo",
+        "Skip all submodule topics"
+      ],
+      "answer": 0,
+      "explain": "Closing Track A gaps makes push, pull, and submission rehearsal natural."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Reflog can help recover commits after a mistaken reset.",
+      "answer": true,
+      "explain": "Reflog records where HEAD has been—useful for recovery practice."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Live push and PR practice should use…",
+      "choices": [
+        "Your unix-git-practice template fork, not the learn_git curriculum tree",
+        "Only browser labs with no clone",
+        "The course README as a remote",
+        "A repo with no .git directory"
+      ],
+      "answer": 0,
+      "explain": "The sandbox template keeps student work separate from shared course history."
+    }
+  ]
+}

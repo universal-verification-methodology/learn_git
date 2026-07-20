@@ -1,0 +1,56 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-rt-12gewC
+
+$ git init
+
+$ echo "v1" > README.md
+
+$ git add README.md
+
+$ git commit -m "init"
+
+$ git branch -M main
+
+$ git init --bare ../origin.git
+
+$ git remote add origin ../origin.git
+
+$ git push -u origin main
+
+$ git clone ../origin.git ../teammate
+
+$ echo "v2 remote" >> README.md
+
+$ git add README.md
+
+$ git commit -m "remote advance"
+
+$ git push origin main
+
+$ git fetch origin
+
+$ git branch -r
+  origin/main
+
+$ echo "local work" >> README.md
+
+$ git add README.md
+
+$ git commit -m "local commit"
+
+$ git branch -vv
+* main 359412f [origin/main: ahead 1, behind 1] local commit
+
+$ git checkout -b feature-tmp
+
+$ git push -u origin feature-tmp
+
+$ git push origin --delete feature-tmp
+
+$ git fetch origin
+
+$ git remote prune origin
+
+$ git branch -r
+  origin/main

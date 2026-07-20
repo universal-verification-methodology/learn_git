@@ -1,12 +1,114 @@
-# Module 19 outline
-title: "Template-repo bootstrap"
-kind: lab
-lab: template-clone
+title: Template-repo bootstrap
+footer: learn_git — template clone
 slides:
-  - Course context / why this matters for coursework & delivery
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-Git demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Template-repo bootstrap
+  subtitle: Course labs often start from a template repository, not a blank folder
+  notes: 'Course labs often start from a template repository—not a blank folder. GitHub’s
+    use this template gives you a writable copy with the right layout already in place.
+    Your first job after clone is orientation: where is the RTL, where are testbenches
+    and scripts, and is the working tree clean? This module bootstraps that habit
+    before you touch real coursework repos.'
+- type: bullets
+  title: Clone, map, status
+  bullets:
+  - Clone the template URL into a project folder, change into it, and list the top
+    level
+  - Expect directories like rtl, tb, scripts
+  - Run status right away
+  - Read gitignore and env example files so you know what not to commit
+  - Map the layout before you write new code
+  notes: 'Clone the template URL into a project folder, change into it, and list the
+    top level. Expect directories like rtl, tb, scripts, and docs—plus a Makefile
+    or README that explains how to build and test. Run status right away: you should
+    be on main with a clean tree and origin pointing at your remote. Read gitignore
+    and env example files so you know what not to commit. Map the layout before you
+    write new code.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Template clone lab starter
+  notes: In the browser lab, load the starter example—your home directory is empty
+    until you create a copy from the chip template. Look at the lab terminal, the
+    layout tree, and the challenge panel above. Clone or use template, change into
+    the project folder, inspect rtl and tb, then run status and remote. Use Check
+    when you match a challenge. You do not need a full tour here—the lab itself guides
+    the rest. Explore a few challenges, then come back for the real Git track.
+- type: image
+  title: Real Git practice
+  image: assets/real-shell.png
+  caption: Real shell — clone template and inspect
+  notes: In the real Git track, simulate a course template with rtl, tb, scripts,
+    and docs. Clone it into a new project directory, list the layout, and confirm
+    a clean status on main. Show the remote URL and branch so you know where push
+    will go later.
+- type: code
+  title: Real Git practice — try these
+  code: '# (setup) chip-template repo with rtl/, tb/, scripts/, docs/
+
+
+    # git clone <template-url> chip-lab — copy template into your workspace
+
+    git clone ../chip-template chip-lab
+
+
+    # cd chip-lab — work inside the new project
+
+    cd chip-lab
+
+
+    # ls -la — see top-level files and folders
+
+    ls -la
+
+
+    # ls rtl tb scripts docs — map source, tests, and tooling
+
+    ls rtl tb scripts docs
+
+
+    # cat README.md — read quick-start notes
+
+    cat README.md
+
+
+    # git status — confirm clean tree on main
+
+    git status
+
+
+    # git remote -v — see where origin points
+
+    git remote -v
+
+
+    # git branch — confirm current branch name
+
+    git branch
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Clone into a fresh folder name, you do not want to nest a repo inside another
+    by accident
+  - If status is not clean immediately after clone, find out why before you start
+    editing
+  - Do not commit env files with secrets, copy from env example instead
+  - And remember
+  notes: 'Clone into a fresh folder name—you do not want to nest a repo inside another
+    by accident. If status is not clean immediately after clone, find out why before
+    you start editing. Do not commit env files with secrets—copy from env example
+    instead. And remember: the browser lab is for literacy—real assignments still
+    need your GitHub template or sandbox clone with submodules if applicable.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, load the starter, bootstrap chip-lab, and run your first status
+  - On real Git, clone a template tree and map rtl, tb, and scripts
+  - When you are ready
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load the starter, bootstrap chip-lab, and run your first status. On real Git,
+    clone a template tree and map rtl, tb, and scripts. When you are ready, take the
+    short quiz, then continue to the next module on submission reproducibility.

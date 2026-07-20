@@ -1,23 +1,62 @@
-# Module 02 transcript — Graph, stage, commit (playground)
+# Module 02 — Graph, stage, commit (playground)
 
-> Stub for voiceover / clip. Expand when recording (module-slides).
+**Module id:** module02-git-graph  
+**Lab:** git-graph  
+**Tracks:** A · B
 
-## Hook
+## Slide 1 — Graph, stage, commit (playground)
 
-In coursework and delivery you will live in Git. This module: **Graph, stage, commit (playground)**.
+You already know the three places Git keeps your work: the working tree, the staging area, and the last commit. This module adds the picture that ties them together—history as a graph. Each commit is a snapshot node; each new commit grows the chain forward. We will practice that flow in the browser playground, then build the same chain on real Git.
 
-## Teach
+## Slide 2 — History is a growing graph
 
-(3–5 sentences on the concept.)
+Think of commits as beads on a string. The first commit has no parent; every later commit points at the one before it. Staging is still the gate: you add changes, then commit to create the next bead. The log is how you read that chain—short hashes and messages tell you what happened and in what order. Branching and merging add forks later; for now, focus on making a clean line of commits you can read.
 
-## Show Track B
+## Slide 3 — Browser lab
 
-Open the browser lab, `git-graph`. Load the starter. Point at the UI.
+![Git graph lab starter](assets/lab-starter.png)
 
-## Show Track A
+In the browser lab track, open the Git graph playground from the tools page. You will see three regions: the challenge card at the top, the status panel and commit graph in the middle, and the command buttons below. Load the starter example so the graph and status match. Work a few challenges—stage a file, commit, watch the graph grow—then use Check when you think the task is done. The lab grades your moves; you do not need a full tour here.
 
-In a real terminal, demonstrate one command sequence from `examples/` or `~/unix_practice/git_demo`.
+## Slide 4 — Real Git practice
 
-## Your turn
+![Real shell — add, commit, log](assets/real-shell.png)
 
-Complete the checklist for at least one track. Then take the short quiz.
+In the real Git track, create a tiny practice repo and record two commits so you can see a chain in the log. Start a repo, write a notes file, stage it, and commit with a short message. Edit the file, stage again, and commit once more. Then show recent history on one line each, and use the graph view so you can see parent links. That add–commit rhythm is what the browser lab is training—you are just doing it on disk.
+
+```bash
+# git init — create a new repository here
+git init
+
+# echo … > notes.md — create a file in the working tree
+echo "first line" > notes.md
+
+# git add notes.md — stage the file for the next commit
+git add notes.md
+
+# git commit -m "…" — record the first snapshot
+git commit -m "Add notes"
+
+# echo … >> notes.md — append another line (working tree changes)
+echo "second line" >> notes.md
+
+# git add notes.md — stage the update
+git add notes.md
+
+# git commit -m "…" — record the second snapshot on top of the first
+git commit -m "Update notes"
+
+# git log --oneline — one line per commit (newest first)
+git log --oneline
+
+# git log --oneline --graph — same list with parent links drawn
+git log --oneline --graph
+```
+
+## Slide 5 — Pitfalls to watch
+
+Do not commit without staging first—an empty staging area means nothing new to record. Do not assume the graph updates when you only save in the editor; save updates the working tree, add moves to staging, commit creates the node. And remember: the playground simplifies remotes and team workflows—those come back on real Git in later modules.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, load the starter and finish a few graph challenges. On real Git, repeat add, commit, and log in your practice tree or the add-commit-log example folder. When you are ready, take the short quiz, then continue to gitignore patterns in the next module.

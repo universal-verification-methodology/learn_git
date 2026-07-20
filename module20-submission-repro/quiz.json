@@ -1,0 +1,53 @@
+{
+  "module": "module20-submission-repro",
+  "title": "Submission reproducibility check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Before submitting, git status should show…",
+      "choices": [
+        "No surprise junk or secrets you did not mean to ship",
+        "Thousands of build artifacts staged",
+        "Your password in .env committed",
+        "A detached HEAD forever with no commits"
+      ],
+      "answer": 0,
+      "explain": "Pre-submit status confirms you know what is tracked, ignored, or still local-only."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Course scripts should usually be run from…",
+      "choices": [
+        "The repository root (where README and scripts/ live)",
+        "A random subdirectory only",
+        "Outside the repo entirely",
+        "/tmp with no clone"
+      ],
+      "answer": 0,
+      "explain": "Relative paths in scripts and Makefiles assume the repo root as cwd."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "bash scripts/run_demo.sh 2>&1 | tee run.log saves command output for graders.",
+      "answer": true,
+      "explain": "tee duplicates stdout/stderr to a file while still showing it in the terminal."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "For submissions you should ship…",
+      "choices": [
+        ".env.example (not your real .env secrets)",
+        "build/ and wave dumps always",
+        "Only logs, no source",
+        "Nothing from gitignore ever matters"
+      ],
+      "answer": 0,
+      "explain": "Example env documents variables; real .env often holds secrets and stays local."
+    }
+  ]
+}

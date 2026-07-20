@@ -1,0 +1,53 @@
+{
+  "module": "module02-git-graph",
+  "title": "Graph, stage, commit check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Each new commit in a simple linear history…",
+      "choices": [
+        "Replaces every older commit permanently",
+        "Points at its parent and adds a new snapshot",
+        "Only exists in the browser lab",
+        "Skips the staging area entirely"
+      ],
+      "answer": 1,
+      "explain": "A commit records staged content and links to the previous commit as its parent."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git log --oneline is useful because it…",
+      "choices": [
+        "Deletes untracked files",
+        "Shows a compact list of recent commits",
+        "Pushes to a remote automatically",
+        "Creates a new branch"
+      ],
+      "answer": 1,
+      "explain": "One line per commit (short hash + message) helps you read history quickly."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "You must run git add before git commit when you want to record file changes.",
+      "answer": true,
+      "explain": "Commit records what is staged; unstaged edits stay only in the working tree."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "The git-graph browser lab mainly helps you…",
+      "choices": [
+        "Replace Git on your laptop",
+        "Practice staging, committing, and seeing the graph grow",
+        "Configure SSH keys for GitHub",
+        "Run hardware simulators"
+      ],
+      "answer": 1,
+      "explain": "The lab is a literacy playground for the same moves you repeat on real Git."
+    }
+  ]
+}

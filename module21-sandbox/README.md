@@ -35,13 +35,15 @@ git clone --recurse-submodules \
 
 None — use earlier remotes / conflicts / blame labs if you need concept refreshers.
 
-## Media (planned)
+## Media
 
 | Artifact | Path |
 |----------|------|
+| Transcript | [transcript.md](transcript.md) |
 | Outline | [outline.yaml](outline.yaml) |
-| Transcript stub | [transcript.md](transcript.md) |
-| Slides / video | screen-capture of real toolchain (module-slides) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
 
 ## Files
 

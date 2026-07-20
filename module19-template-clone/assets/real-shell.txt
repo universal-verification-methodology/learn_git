@@ -1,0 +1,49 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-tc-g35tek
+
+$ git clone ../chip-template chip-lab
+
+$ cd chip-lab
+
+/tmp/git-tc-g35tek/chip-lab
+
+$ ls -la
+total 36
+drwxr-xr-x 7 yongfu yongfu 4096 Jul 20 14:51 .
+drwx------ 4 yongfu yongfu 4096 Jul 20 14:51 ..
+drwxr-xr-x 8 yongfu yongfu 4096 Jul 20 14:51 .git
+-rw-r--r-- 1 yongfu yongfu    7 Jul 20 14:51 .gitignore
+-rw-r--r-- 1 yongfu yongfu   44 Jul 20 14:51 README.md
+drwxr-xr-x 2 yongfu yongfu 4096 Jul 20 14:51 docs
+drwxr-xr-x 2 yongfu yongfu 4096 Jul 20 14:51 rtl
+drwxr-xr-x 2 yongfu yongfu 4096 Jul 20 14:51 scripts
+drwxr-xr-x 2 yongfu yongfu 4096 Jul 20 14:51 tb
+
+$ ls rtl tb scripts docs
+docs:
+README.md
+
+rtl:
+alu.v
+
+scripts:
+check_ready.sh
+
+tb:
+tb_alu.v
+
+$ cat README.md
+# Chip lab template
+
+Quick start: make help
+
+$ git status
+## main...origin/main
+
+$ git remote -v
+origin	/tmp/git-tc-g35tek/chip-template (fetch)
+origin	/tmp/git-tc-g35tek/chip-template (push)
+
+$ git branch
+* main

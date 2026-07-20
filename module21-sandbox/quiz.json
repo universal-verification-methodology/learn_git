@@ -1,0 +1,53 @@
+{
+  "module": "module21-sandbox",
+  "title": "Live sandbox check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Student push and PR practice should happen on…",
+      "choices": [
+        "Your unix-git-practice template fork, not the curriculum learn_git repo",
+        "The learn_git course tree directly",
+        "Only browser labs with no clone",
+        "A folder with no .git directory"
+      ],
+      "answer": 0,
+      "explain": "The sandbox template isolates student remotes from shared course history."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "To clone and populate submodules in one step, use…",
+      "choices": [
+        "git clone --recurse-submodules",
+        "git clone --bare only",
+        "git remote prune",
+        "git stash pop"
+      ],
+      "answer": 0,
+      "explain": "Recurse submodules runs init/update during clone so external/shared-ip is present."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "make test in unix-git-practice runs stub checks without full EDA installs.",
+      "answer": true,
+      "explain": "The sandbox Makefile targets are stubs for workflow rehearsal."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "scripts/check_ready.sh is meant to run…",
+      "choices": [
+        "Before you push or open a PR",
+        "Only after deleting .git",
+        "Instead of git commit",
+        "Only on the teacher machine"
+      ],
+      "answer": 0,
+      "explain": "It checks clean tree, gitignore hygiene, and that run_demo.sh passes."
+    }
+  ]
+}

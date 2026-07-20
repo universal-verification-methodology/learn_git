@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-1.png'
+duration 24.648
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-2.png'
+duration 26.232
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-3.png'
+duration 29.784
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-4.png'
+duration 12.28
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-6.png'
+duration 30.48
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-7.png'
+duration 22.944
+file '/mnt/d/proj/designs/learning/courses/learn_git/module20-submission-repro/frames/slide-7.png'

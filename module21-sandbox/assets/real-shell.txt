@@ -1,0 +1,49 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-sbx-e4RNVv
+
+$ git clone --recurse-submodules <template> my-practice
+
+$ cd my-practice
+
+/tmp/git-sbx-e4RNVv/my-practice
+
+$ ls src tb scripts external/shared-ip
+external/shared-ip:
+README.md
+VERSION
+rtl
+
+scripts:
+README.md
+check_ready.sh
+run_demo.sh
+
+src:
+alu.v
+main.v
+
+tb:
+test_main.v
+
+$ make test
+built build/main.o
+INFO  demo: starting
+INFO  demo: checking src/
+INFO  demo: checking tb/
+WARN  demo: no .env (copy .env.example)
+INFO  demo: submodule shared-ip present
+INFO  demo: PASS
+make test: PASS
+
+$ bash scripts/check_ready.sh
+OK  working tree clean
+OK  no build/logs tracked
+OK  .gitignore covers build/ and logs/
+OK  run_demo.sh exits 0
+Ready to push.
+
+$ git checkout -b lab1
+
+$ git status
+## lab1

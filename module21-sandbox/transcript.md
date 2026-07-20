@@ -1,23 +1,54 @@
-# Module 21 transcript — Live sandbox: clone → Make → PR
+# Module 21 — Live sandbox: clone → Make → PR
 
-> Stub for voiceover / clip. Expand when recording (module-slides).
+**Module id:** module21-sandbox  
+**Lab:** none (offline · `unix-git-practice`)  
+**Tracks:** A only
 
-## Hook
+## Slide 1 — Live sandbox capstone
 
-In coursework and delivery you will live in Git. This module: **Live sandbox: clone → Make → PR**.
+Browser labs taught the ideas—now you rehearse on a real GitHub template. The unix-git-practice sandbox is a small chip-lab layout with Make stubs, scripts, and a shared-ip submodule. You create your own writable copy, clone with submodules, run tests, and optionally open a practice pull request on your fork. This module is Track A only: no browser lab, just the live toolchain.
 
-## Teach
+## Slide 2 — Sandbox, not the curriculum repo
 
-(3–5 sentences on the concept.)
+The learn Git course tree is for reading modules and local examples—do not push student work there. The org template is your practice surface: Use this template on GitHub, then clone your copy with recurse submodules. That gives you src, tb, scripts, and external shared-ip without polluting shared course history. Read the sandbox note once so you know which URL is which.
 
-## Show Track B
+## Slide 3 — Capstone workflow
 
-No browser lab — this clip is a screen capture of the live sandbox.
+Here is the end-to-end rhythm. On GitHub, generate your repo from the unix-git-practice template. Clone with recurse submodules so shared-ip is populated. Change into the project and run make test to exercise the stub build and demo script. Run the check-ready script before you push. Create a lab branch, commit a small change, push to your fork, and open a practice pull request into main. Explore-only is fine too—clone the org template read-only if you are not ready to push.
 
-## Show Track A
+## Slide 4 — Real Git practice
 
-Demo clone → Make → PR on `unix-git-practice` (see SANDBOX.md).
+![Real shell — clone template, make test, lab branch](assets/real-shell.png)
 
-## Your turn
+In the real Git track, clone the practice template into a fresh folder—here we use the bundled sandbox stand-in for the GitHub URL. List src, tb, and scripts, run make test, pass check-ready, then create a lab branch and show status.
 
-Complete the checklist for at least one track. Then take the short quiz.
+```bash
+# git clone --recurse-submodules <your-template-url> my-practice
+git clone --recurse-submodules <your-template-url> my-practice
+
+# cd my-practice — enter the cloned sandbox
+cd my-practice
+
+# ls src tb scripts external/shared-ip — map the layout
+ls src tb scripts external/shared-ip
+
+# make test — run stub build and demo checks
+make test
+
+# bash scripts/check_ready.sh — pre-push readiness script
+bash scripts/check_ready.sh
+
+# git checkout -b lab1 — branch for lab work
+git checkout -b lab1
+
+# git status — confirm branch and working tree
+git status
+```
+
+## Slide 5 — Pitfalls to watch
+
+Do not push assignments into the curriculum learn Git repository—use your template fork. Always clone with recurse submodules or run submodule init afterward, or shared-ip stays empty. Run make and check-ready from the repo root, not a subdirectory. And remember: this is rehearsal—follow course policy on whether a practice PR is required or explore-only is enough.
+
+## Slide 6 — Your turn
+
+Complete the sandbox checklist on your fork or an explore-only clone. Clone with submodules, run make test, and describe clone to make to pull request in your own words. When you are ready, take the short quiz, then continue to the wrap module on completing the Git path.

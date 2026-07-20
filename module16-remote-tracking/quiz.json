@@ -1,0 +1,53 @@
+{
+  "module": "module16-remote-tracking",
+  "title": "Remote-tracking branches check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "origin/main in your local repo is…",
+      "choices": [
+        "A remote-tracking ref — the last-seen tip of main on origin",
+        "A second copy of your working tree",
+        "Always identical to your local main",
+        "A submodule path"
+      ],
+      "answer": 0,
+      "explain": "origin/main is updated by fetch/push; your local main moves only when you commit or merge/rebase."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git fetch origin…",
+      "choices": [
+        "Updates remote-tracking refs without merging into your current branch",
+        "Always deletes local branches",
+        "Is the same as git push",
+        "Rewrites all commit messages"
+      ],
+      "answer": 0,
+      "explain": "Fetch refreshes origin/* pointers; pull adds integration into the checked-out branch."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "git branch -vv shows each local branch and its upstream tracking branch.",
+      "answer": true,
+      "explain": "-vv adds upstream names and ahead/behind counts when tracking is set."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "After a branch is deleted on the remote, locally you may run…",
+      "choices": [
+        "git fetch origin && git remote prune origin",
+        "git clean -fdx only",
+        "git bisect reset",
+        "git submodule deinit --all"
+      ],
+      "answer": 0,
+      "explain": "Fetch learns the deletion; prune removes stale origin/* remote-tracking refs."
+    }
+  ]
+}

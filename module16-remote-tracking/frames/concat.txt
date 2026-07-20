@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-1.png'
+duration 22.872
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-2.png'
+duration 28.56
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-3.png'
+duration 34.152
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-4.png'
+duration 22.408
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-6.png'
+duration 26.304
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-7.png'
+duration 21.552
+file '/mnt/d/proj/designs/learning/courses/learn_git/module16-remote-tracking/frames/slide-7.png'

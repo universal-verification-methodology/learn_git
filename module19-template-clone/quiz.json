@@ -1,0 +1,53 @@
+{
+  "module": "module19-template-clone",
+  "title": "Template-repo bootstrap check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Right after cloning a course template you should…",
+      "choices": [
+        "Inspect the layout and run git status on a clean tree",
+        "Delete .git immediately",
+        "Force-push to the org template",
+        "Skip reading README and Makefile"
+      ],
+      "answer": 0,
+      "explain": "Bootstrap means orient: know the folders and confirm a clean starting state."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A typical chip-lab template includes…",
+      "choices": [
+        "RTL source, testbench, and scripts directories",
+        "Only wave dumps and build artifacts",
+        "No README or gitignore",
+        "A second .git inside every file"
+      ],
+      "answer": 0,
+      "explain": "Templates ship src/rtl, tb, scripts, docs—not generated build output."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "git remote -v after clone shows where origin points for fetch and push.",
+      "answer": true,
+      "explain": "Checking origin early prevents pushing to the wrong repository."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Use this template on GitHub is for…",
+      "choices": [
+        "Creating your own writable copy from an org template",
+        "Deleting remote branches",
+        "Running git bisect",
+        "Avoiding git clone forever"
+      ],
+      "answer": 0,
+      "explain": "Templates let each student fork a writable repo with the right starting layout."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-sm-NyXgPh
+
+$ git clone <parent> fresh-clone
+
+$ ls vendor/dv-lib
+
+$ git submodule status
+-b8f039e683b82cd10213250df81ea9c53fadfecc vendor/dv-lib
+
+$ git submodule update --init --recursive
+
+$ cat vendor/dv-lib/VERSION
+v1
+
+$ git status
+## HEAD (no branch)
+
+$ git fetch
+
+$ git checkout 5ebebdb87ff733414fd2ec99f562c49d06f5adfc
+
+$ git add vendor/dv-lib
+
+$ git commit -m "Bump dv-lib pin"
+
+$ git submodule status
+ 5ebebdb87ff733414fd2ec99f562c49d06f5adfc vendor/dv-lib (heads/main)

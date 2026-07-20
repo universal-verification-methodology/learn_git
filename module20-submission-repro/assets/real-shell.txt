@@ -1,0 +1,26 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-sr-Qo2bFU
+
+$ git status
+## main...origin/main
+
+$ cat .gitignore
+build/
+logs/
+*.log
+.env
+
+$ bash scripts/run_demo.sh
+demo ok
+
+$ bash scripts/run_demo.sh 2>&1 | tee run.log
+demo ok
+
+$ tail run.log
+demo ok
+
+$ git log --oneline -3
+c3c91a7 init lab sources
+
+$ git push origin main

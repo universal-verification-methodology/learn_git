@@ -27,13 +27,15 @@ Work in a local practice repo using this module’s `examples/` (adapted from `l
 
 > Concept labs are literacy tools — they do not replace real Git for remotes, PRs, and submissions.
 
-## Media (planned)
+## Media
 
 | Artifact | Path |
 |----------|------|
+| Transcript | [transcript.md](transcript.md) |
 | Outline | [outline.yaml](outline.yaml) |
-| Transcript stub | [transcript.md](transcript.md) |
-| Slides / video | generate later with **module-slides** |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
 
 ## Files
 

@@ -1,0 +1,25 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-graph-gzaFUh
+
+$ git init
+
+$ echo "first line" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Add notes"
+
+$ echo "second line" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "Update notes"
+
+$ git log --oneline
+638647b Update notes
+388c7fa Add notes
+
+$ git log --oneline --graph
+* 638647b Update notes
+* 388c7fa Add notes

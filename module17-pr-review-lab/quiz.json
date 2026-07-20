@@ -1,0 +1,53 @@
+{
+  "module": "module17-pr-review-lab",
+  "title": "PR review checklist",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A reviewable PR is usually…",
+      "choices": [
+        "Focused on one concern with a diff you can understand",
+        "As large as possible so you only review once",
+        "Only documentation with no verification",
+        "Always a draft forever"
+      ],
+      "answer": 0,
+      "explain": "Small, single-purpose PRs are easier to review correctly."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "RTL or TB changes should include…",
+      "choices": [
+        "Test or simulation evidence (how you verified)",
+        "Only a wave dump in the repo",
+        "Your password in .env",
+        "No description at all"
+      ],
+      "answer": 0,
+      "explain": "Reviewers need proof the change was exercised—sim, TB, or CI."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Build artifacts like .vcd files and sim logs should not appear in a PR diff.",
+      "answer": true,
+      "explain": "Diff hygiene keeps generated noise and secrets out of version control."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "If a PR leaks a secret token, you should…",
+      "choices": [
+        "Request changes immediately—never merge secrets",
+        "Approve to save time",
+        "Force-push main",
+        "Ignore hygiene checks"
+      ],
+      "answer": 0,
+      "explain": "Secrets in a diff are a blocking issue regardless of other quality."
+    }
+  ]
+}
