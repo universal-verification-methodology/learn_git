@@ -1,0 +1,51 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-stash-Vlezpw
+
+$ git init
+
+$ echo "v1" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Add notes"
+
+$ echo "wip draft" >> notes.md
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notes.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git stash push -m "WIP notes"
+Saved working directory and index state On master: WIP notes
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ git stash list
+stash@{0}: On master: WIP notes
+
+$ git stash pop
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notes.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (9c4304e69a5529ea0ff1a102d0c4dca056f221ba)
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notes.md
+
+no changes added to commit (use "git add" and/or "git commit -a")

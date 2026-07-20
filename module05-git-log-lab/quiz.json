@@ -1,0 +1,53 @@
+{
+  "module": "module05-git-log-lab",
+  "title": "git log options check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git log --oneline shows…",
+      "choices": [
+        "Only remote URLs",
+        "A short hash plus each commit subject",
+        "Your editor theme",
+        "Only untracked files"
+      ],
+      "answer": 1,
+      "explain": "Oneline is the quick scan view: abbreviated hash and subject."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git log --oneline --graph --all is mainly for…",
+      "choices": [
+        "Deleting branches",
+        "Seeing branch topology in a compact history",
+        "Changing your Git password",
+        "Ignoring build/"
+      ],
+      "answer": 1,
+      "explain": "Graph draws ASCII topology; --all includes other refs, not only the current branch tip."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "git log --oneline -- notes.md limits history to…",
+      "choices": [
+        "Commits that touched notes.md",
+        "Every commit on every remote forever",
+        "Only merge commits",
+        "Commits with empty messages"
+      ],
+      "answer": 0,
+      "explain": "A path after -- filters to commits that changed that path."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "git log -3 (or --oneline -3) limits how many commits are shown.",
+      "answer": true,
+      "explain": "A count flag like -3 or -n 3 truncates the listing to recent commits."
+    }
+  ]
+}

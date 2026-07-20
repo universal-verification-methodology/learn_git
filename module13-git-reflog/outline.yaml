@@ -1,0 +1,121 @@
+title: Reflog recovery
+footer: learn_git — git reflog
+slides:
+- type: title
+  title: Reflog recovery
+  subtitle: You reset too far, checked out the wrong branch, or rebased and thought
+    a commit was gone
+  notes: You reset too far, checked out the wrong branch, or rebased and thought a
+    commit was gone. Reflog is your local diary of where HEAD has been. It often holds
+    the hash you need to recover—even when normal log no longer shows that commit.
+- type: bullets
+  title: Reflog before panic
+  bullets:
+  - 'Run reflog to see recent moves: commits, checkouts, resets'
+  - Each line has an index like HEAD at one, meaning one step ago
+  - If a hard reset dropped your tip
+  - Reflog is local only and entries expire after a while, so recover soon
+  notes: 'Run reflog to see recent moves: commits, checkouts, resets. Each line has
+    an index like HEAD at one, meaning one step ago. If a hard reset dropped your
+    tip, reset hard to HEAD at one to move back—or create a recovery branch pointing
+    at the hash you find. Reflog is local only and entries expire after a while, so
+    recover soon.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Reflog recovery lab starter
+  notes: 'In the browser lab, look at three pieces: the challenge card, the branch
+    tip display, and the reflog list with reset and recovery actions. Load the starter
+    example, hard-reset to drop a commit, then bring it back using reflog. Use Check
+    when you think a challenge is done. You do not need a full tour here—the lab itself
+    guides the rest. Explore a few challenges, then come back for the real Git track.'
+- type: image
+  title: Real Git practice
+  image: assets/real-shell.png
+  caption: Real shell — reset, reflog, recover
+  notes: In the real Git track, make two commits on main, then run reflog so you see
+    the history of HEAD moves. Hard-reset back one commit—the important work disappears
+    from log but stays in reflog. Run reflog again, then reset hard to HEAD at one
+    to restore the tip. Log should show both commits again. That is the safety net
+    when you move too aggressively locally.
+- type: code
+  title: Real Git practice — try these
+  code: '# git init — create a new repository here
+
+    git init
+
+
+    # echo … > notes.md — first commit
+
+    echo "v1" > notes.md
+
+    git add notes.md
+
+    git commit -m "First"
+
+    git branch -M main
+
+
+    # echo … >> notes.md — commit you might “lose”
+
+    echo "important" >> notes.md
+
+    git add notes.md
+
+    git commit -m "Important work"
+
+
+    # git reflog — see where HEAD has been
+
+    git reflog
+
+
+    # git reset --hard HEAD~1 — drop the latest commit from the branch tip
+
+    git reset --hard HEAD~1
+
+
+    # git log --oneline — latest commit no longer on the branch
+
+    git log --oneline
+
+
+    # git reflog — find the previous tip (e.g. HEAD@{1})
+
+    git reflog
+
+
+    # git reset --hard HEAD@{1} — move tip back to recover
+
+    git reset --hard HEAD@{1}
+
+
+    # git log --oneline — important commit is back
+
+    git log --oneline
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Reflog does not travel to the remote, recovery is for your local clone
+  - Entries expire; do not treat reflog as permanent backup
+  - Prefer reset hard to HEAD at one only when you are sure that entry is the state
+    you want
+  - And remember
+  notes: 'Reflog does not travel to the remote—recovery is for your local clone. Entries
+    expire; do not treat reflog as permanent backup. Prefer reset hard to HEAD at
+    one only when you are sure that entry is the state you want. And remember: the
+    browser lab is for literacy—teammates still need a pushed branch if they need
+    your recovered commit.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, load the starter and recover a dropped commit from reflog
+  - On real Git, reset back one commit, then restore with HEAD at one
+  - When you are ready
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load the starter and recover a dropped commit from reflog. On real Git, reset
+    back one commit, then restore with HEAD at one. When you are ready, take the short
+    quiz, then continue to the next module on blame and bisect.

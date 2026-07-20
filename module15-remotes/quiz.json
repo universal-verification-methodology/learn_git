@@ -1,0 +1,53 @@
+{
+  "module": "module15-remotes",
+  "title": "Remotes, PRs & submodules check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A remote named origin usually…",
+      "choices": [
+        "Points at the default hosted copy of your repository",
+        "Is only a local branch name",
+        "Deletes all commits",
+        "Replaces git blame"
+      ],
+      "answer": 0,
+      "explain": "Origin is the conventional name for the primary remote URL (e.g. on GitHub)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "First push of lab1 that also sets upstream is…",
+      "choices": [
+        "git push -u origin lab1",
+        "git push lab1",
+        "git remote remove origin",
+        "git bisect start"
+      ],
+      "answer": 0,
+      "explain": "-u records upstream so later git push can omit remote and branch names."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A typical lab pull request compares…",
+      "choices": [
+        "lab1 into main",
+        "main into lab1 only",
+        "origin into HEAD always",
+        "tags into stash"
+      ],
+      "answer": 0,
+      "explain": "You propose merging your feature/lab branch into the integration branch (main)."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "After cloning a repo with submodules, you may need git submodule update --init --recursive.",
+      "answer": true,
+      "explain": "Submodule directories are empty until initialized; clone --recurse-submodules avoids that step."
+    }
+  ]
+}

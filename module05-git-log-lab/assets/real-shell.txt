@@ -1,0 +1,31 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-log-8PVpik
+
+$ git log --oneline
+077c3c7 Add README
+1001c0b Expand notes
+6e3b594 Add notes
+
+$ git log --oneline -3
+077c3c7 Add README
+1001c0b Expand notes
+6e3b594 Add notes
+
+$ git log --oneline --graph --all
+* 077c3c7 Add README
+* 1001c0b Expand notes
+* 6e3b594 Add notes
+
+$ git log --name-only -1
+commit 077c3c7a5672984c349b44cd68af75d3bda6dd13
+Author: Demo <demo@local>
+Date:   Mon Jul 20 14:14:38 2026 +0800
+
+    Add README
+
+README.md
+
+$ git log --oneline -- notes.md
+1001c0b Expand notes
+6e3b594 Add notes

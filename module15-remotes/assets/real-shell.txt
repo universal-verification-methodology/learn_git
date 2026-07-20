@@ -1,0 +1,38 @@
+# real shell session (Track A)
+
+# practice sandbox: /tmp/git-remotes-ObbWLg
+
+$ git init
+
+$ echo "practice v1" > README.md
+
+$ git add README.md
+
+$ git commit -m "init"
+
+$ git branch -M main
+
+$ git init --bare ../origin.git
+
+$ git remote add origin ../origin.git
+
+$ git push -u origin main
+
+$ git checkout -b lab1
+
+$ echo "lab1 change" >> README.md
+
+$ git add README.md
+
+$ git commit -m "lab1: update README"
+
+$ git push -u origin lab1
+
+$ git remote -v
+origin	/tmp/git-remotes-ObbWLg/origin.git (fetch)
+origin	/tmp/git-remotes-ObbWLg/origin.git (push)
+
+$ git submodule add ../shared-lib external/shared-ip
+
+$ git submodule status
+ 849c484fba19376bdcf1d8dc322f9212ee618202 external/shared-ip (heads/master)

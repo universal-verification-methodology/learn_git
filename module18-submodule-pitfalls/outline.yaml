@@ -1,0 +1,12 @@
+# Module 18 outline
+title: "Submodule pitfalls"
+kind: lab
+lab: submodule-pitfalls
+slides:
+  - Course context / why this matters for coursework & delivery
+  - Core idea (1 concept)
+  - Track B: show lab starter (if lab module)
+  - Track A: one real-Git demo
+  - Common pitfalls
+  - Your turn + quiz prompt
+duration_minutes: 8

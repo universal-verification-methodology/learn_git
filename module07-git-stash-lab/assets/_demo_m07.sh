@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# Track A demo for module07-git-stash-lab (session frame for slides).
+set -euo pipefail
+
+echo '# real shell session (Track A)'
+echo
+
+DEMO="$(mktemp -d "${TMPDIR:-/tmp}/git-stash-XXXXXX")"
+cd "$DEMO"
+printf '%s\n' "# practice repo: $DEMO"
+echo
+
+printf '%s\n' '$ git init'
+git init -q
+echo
+
+printf '%s\n' '$ echo "v1" > notes.md'
+echo "v1" > notes.md
+echo
+
+printf '%s\n' '$ git add notes.md'
+git add notes.md
+echo
+
+printf '%s\n' '$ git commit -m "Add notes"'
+git -c user.email=demo@local -c user.name=Demo commit -q -m "Add notes"
+echo
+
+printf '%s\n' '$ echo "wip draft" >> notes.md'
+echo "wip draft" >> notes.md
+echo
+
+printf '%s\n' '$ git status'
+git status
+echo
+
+printf '%s\n' '$ git stash push -m "WIP notes"'
+git stash push -m "WIP notes"
+echo
+
+printf '%s\n' '$ git status'
+git status
+echo
+
+printf '%s\n' '$ git stash list'
+git stash list
+echo
+
+printf '%s\n' '$ git stash pop'
+git stash pop
+echo
+
+printf '%s\n' '$ git status'
+git status
+echo

@@ -1,0 +1,27 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-cm-njs7GR
+
+$ git init
+Initialized empty Git repository in /tmp/git-cm-njs7GR/.git/
+
+$ echo "lab notes" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Add lab notes"
+[master (root-commit) 6fc1ec5] Add lab notes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 notes.md
+
+$ echo "reset polarity fixed in TB" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "Note TB reset polarity fix"
+[master 1d37722] Note TB reset polarity fix
+ 1 file changed, 1 insertion(+)
+
+$ git log --oneline
+1d37722 Note TB reset polarity fix
+6fc1ec5 Add lab notes

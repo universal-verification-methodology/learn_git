@@ -1,0 +1,53 @@
+{
+  "module": "module07-git-stash-lab",
+  "title": "Stash scenarios check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git stash push mainly…",
+      "choices": [
+        "Deletes all commit history",
+        "Saves uncommitted tracked changes and cleans the working tree",
+        "Force-pushes to origin",
+        "Creates a new remote branch"
+      ],
+      "answer": 1,
+      "explain": "Stash push stores dirty tracked work on the stash stack and resets the working tree toward HEAD."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git stash pop compared with git stash apply…",
+      "choices": [
+        "Pop applies the stash and removes it from the list; apply keeps the entry",
+        "Pop only works on remotes; apply only works locally",
+        "They are identical in every case",
+        "Pop never restores file contents"
+      ],
+      "answer": 0,
+      "explain": "Pop = apply + drop the top stash entry; apply leaves the stash on the stack."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "By default, git stash includes untracked files.",
+      "answer": false,
+      "explain": "Default stash covers tracked dirty files; use stash push -u to include untracked files."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A common reason to stash is…",
+      "choices": [
+        "You need a clean tree to switch branches or pull mid-edit",
+        "You want to delete .git",
+        "You never plan to restore the changes",
+        "You are editing the syllabus only"
+      ],
+      "answer": 0,
+      "explain": "Stash pauses local work so you can change context, then pop or apply to resume."
+    }
+  ]
+}

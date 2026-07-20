@@ -1,0 +1,53 @@
+{
+  "module": "module11-git-rebase-merge",
+  "title": "Rebase vs merge check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git rebase main on your feature branch mainly…",
+      "choices": [
+        "Replays your commits on top of the current main tip",
+        "Deletes the remote forever",
+        "Ignores all conflict markers automatically",
+        "Replaces git stash"
+      ],
+      "answer": 0,
+      "explain": "Rebase rewinds and reapplies your branch commits as if they started from latest main."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git merge on main typically…",
+      "choices": [
+        "Joins another branch with a merge commit (or fast-forward)",
+        "Erases every commit in history",
+        "Only lists tags",
+        "Runs only in the browser lab"
+      ],
+      "answer": 0,
+      "explain": "Merge integrates branches; divergent histories get an explicit merge commit."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Rebasing a shared branch others already pulled is usually safe.",
+      "answer": false,
+      "explain": "Rebase rewrites history; shared branches should merge unless everyone agrees to rebase."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A common pre-PR rhythm on a solo feature branch is…",
+      "choices": [
+        "Rebase onto latest main for a linear review story",
+        "Force-push main daily",
+        "Never update from main",
+        "Delete .gitignore first"
+      ],
+      "answer": 0,
+      "explain": "Solo feature branches often rebase onto main before review for a clean log."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-rb-Y9j9L4
+
+$ git init
+
+$ echo "base" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Base"
+
+$ git branch -M main
+
+$ git checkout -b feature/update
+
+$ echo "feature" >> notes.md
+
+$ git add feature.txt
+
+$ git commit -m "Feature work"
+
+$ git checkout main
+
+$ echo "main update" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "Main moved forward"
+
+$ git checkout feature/update
+
+$ git rebase main
+
+$ git log --oneline --graph --all
+* 7645b82 Feature work
+* 2bc7997 Main moved forward
+* 0d1bd70 Base

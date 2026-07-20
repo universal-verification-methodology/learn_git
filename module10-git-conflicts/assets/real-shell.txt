@@ -1,0 +1,55 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-conf-MWYSuJ
+
+$ git init
+
+$ echo "shared" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Initial"
+
+$ git branch -M main
+
+$ git checkout -b feature/conflict-test
+
+$ echo "Line from feature" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Change on feature"
+
+$ git checkout main
+
+$ echo "Line from main" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Change on main"
+
+$ git merge feature/conflict-test
+Auto-merging notes.md
+CONFLICT (content): Merge conflict in notes.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ cat notes.md
+<<<<<<< HEAD
+Line from main
+=======
+Line from feature
+>>>>>>> feature/conflict-test
+
+$ echo "Resolved line" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Resolve merge conflict"
+
+$ git log --oneline --graph --all
+*   864f342 Resolve merge conflict
+|\  
+| * 5bb45a9 Change on feature
+* | 33cd954 Change on main
+|/  
+* 712590c Initial

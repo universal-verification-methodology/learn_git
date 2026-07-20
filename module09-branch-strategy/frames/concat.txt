@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-1.png'
+duration 17.88
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-2.png'
+duration 17.664
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-3.png'
+duration 26.952
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-4.png'
+duration 18.784
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-6.png'
+duration 19.2
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-7.png'
+duration 21.768
+file '/mnt/d/proj/designs/learning/courses/learn_git/module09-branch-strategy/frames/slide-7.png'

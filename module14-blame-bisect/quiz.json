@@ -1,0 +1,53 @@
+{
+  "module": "module14-blame-bisect",
+  "title": "Blame & bisect check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git blame on a file shows…",
+      "choices": [
+        "Per line: last commit, author, and date that changed it",
+        "Only remote branch names",
+        "Your SSH keys",
+        "Only untracked files"
+      ],
+      "answer": 0,
+      "explain": "Blame annotates each line with the most recent commit that modified it."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git bisect is used to…",
+      "choices": [
+        "Binary-search history for the first bad commit between good and bad tips",
+        "Delete all tags",
+        "Ignore build/ forever",
+        "Replace git merge always"
+      ],
+      "answer": 0,
+      "explain": "Bisect halves the search range using your good/bad test until the first bad commit is found."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "You should run git bisect reset when you are done bisecting.",
+      "answer": true,
+      "explain": "Reset leaves bisect mode and restores a normal checkout."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A good bisect test script should…",
+      "choices": [
+        "Exit 0 for good revisions and non-zero for bad",
+        "Always exit 0",
+        "Delete .git",
+        "Only print blame output"
+      ],
+      "answer": 0,
+      "explain": "git bisect run uses exit status: 0 = good, non-zero = bad."
+    }
+  ]
+}

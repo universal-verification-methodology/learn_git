@@ -1,0 +1,37 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-cp-5im2B8
+
+$ git init
+
+$ echo "base" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Base"
+
+$ git branch -M main
+
+$ git checkout -b feature/fix
+
+$ echo "hotfix" > fix.txt
+
+$ git add fix.txt
+
+$ git commit -m "Add hotfix on feature"
+
+$ git log --oneline feature/fix
+ef68f33 Add hotfix on feature
+1150ed0 Base
+
+$ git checkout main
+
+$ git cherry-pick ef68f33
+[main ef68f33] Add hotfix on feature
+ Date: Mon Jul 20 14:32:00 2026 +0800
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fix.txt
+
+$ git log --oneline --all
+ef68f33 Add hotfix on feature
+1150ed0 Base

@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-1.png'
+duration 20.544
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-2.png'
+duration 21.264
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-3.png'
+duration 26.832
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-4.png'
+duration 19.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-6.png'
+duration 22.872
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-7.png'
+duration 20.976
+file '/mnt/d/proj/designs/learning/courses/learn_git/module14-blame-bisect/frames/slide-7.png'

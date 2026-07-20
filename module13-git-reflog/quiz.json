@@ -1,0 +1,53 @@
+{
+  "module": "module13-git-reflog",
+  "title": "Reflog recovery check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git reflog mainly shows…",
+      "choices": [
+        "A local history of where HEAD and branch tips have moved",
+        "Only remote URLs",
+        "Your .gitignore patterns",
+        "Every file on your hard disk"
+      ],
+      "answer": 0,
+      "explain": "Reflog records local HEAD/branch movements—commits, checkouts, resets—even when log forgets a commit."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "After git reset --hard HEAD~1, a common undo is…",
+      "choices": [
+        "git reset --hard HEAD@{1}",
+        "git push --force main",
+        "Delete .gitignore",
+        "git tag -d everything"
+      ],
+      "answer": 0,
+      "explain": "HEAD@{1} is the previous reflog position—often the tip before the reset."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Reflog entries are automatically shared when you git push.",
+      "answer": false,
+      "explain": "Reflog is local to your clone; push recovery branches if others need the commit."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A commit can disappear from git log but still appear in reflog when…",
+      "choices": [
+        "No branch points at it anymore after a hard reset",
+        "You only ran git status",
+        "The file was never committed",
+        "You used git stash list"
+      ],
+      "answer": 0,
+      "explain": "Hard reset can drop the branch tip; reflog may still reference the old commit hash."
+    }
+  ]
+}

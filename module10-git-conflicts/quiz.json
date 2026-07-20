@@ -1,0 +1,53 @@
+{
+  "module": "module10-git-conflicts",
+  "title": "Merge conflicts check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Conflict markers in a file look like…",
+      "choices": [
+        "<<<<<<< HEAD … ======= … >>>>>>> branch",
+        "Only # comments at the top",
+        "Your SSH public key",
+        "build/ and *.log patterns"
+      ],
+      "answer": 0,
+      "explain": "Git inserts HEAD/incoming markers around the competing hunks until you resolve them."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "After you fix a conflicted file, the next steps are usually…",
+      "choices": [
+        "git add the file, then git commit to finish the merge",
+        "Delete .git and recloning",
+        "git stash clear only",
+        "Force-push without reading the file"
+      ],
+      "answer": 0,
+      "explain": "Stage the resolved file, then commit; Git completes the merge with that commit."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "It is OK to commit a merge while <<<<<<< markers are still in the source file.",
+      "answer": false,
+      "explain": "Remove all conflict markers and choose the intended content before you commit."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A merge conflict happens when…",
+      "choices": [
+        "Two branches changed the same lines and Git cannot auto-merge",
+        "You run git tag on an empty repo",
+        "You only use git log --oneline",
+        "Your terminal has no WSL installed"
+      ],
+      "answer": 0,
+      "explain": "Overlapping edits on the same region force a manual resolution."
+    }
+  ]
+}

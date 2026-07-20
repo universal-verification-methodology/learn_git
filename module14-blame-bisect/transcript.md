@@ -1,0 +1,70 @@
+# Module 14 — Blame & bisect
+
+**Module id:** module14-blame-bisect  
+**Lab:** blame-bisect  
+**Tracks:** A · B
+
+## Slide 1 — Blame & bisect
+
+A regression shows up in simulation—when did it start, and who touched that line? Blame annotates each line with the last commit that changed it. Bisect binary-searches history between a known good commit and a bad one to find the first breaking change. Together they turn “it used to work” into a specific commit to inspect.
+
+## Slide 2 — Blame the line, bisect the range
+
+Run blame on a file to see hash, author, and date per line—then show that commit for full context. For bisect, mark bad at the failing tip and good at a commit you trust, test the checkout Git gives you, and answer good or bad until Git names the first bad commit. Reset bisect when you are done so you are not stuck in detached state.
+
+## Slide 3 — Browser lab
+
+![Blame and bisect lab starter](assets/lab-starter.png)
+
+In the browser lab, look at three pieces: the challenge card, the blame table at HEAD, and the bisect good or bad controls. Load the starter example, read who wrote the bug comment, then bisect until the first bad commit appears. Use Check when you think a challenge is done. You do not need a full tour here—the lab itself guides the rest. Explore a few challenges, then come back for the real Git track.
+
+## Slide 4 — Real Git practice
+
+![Real shell — blame and bisect run](assets/real-shell.png)
+
+In the real Git track, build a short history where a middle commit is clean and a later commit adds a marker line you can test for. Run blame on the file to see which commit owns each line. Then start bisect with a tiny test script, mark good and bad ends, and let bisect run find the first bad commit automatically. Finish with bisect reset so your branch checkout is normal again.
+
+```bash
+# git init — create a new repository here
+git init
+
+# echo … > notes.md — first commit (known good)
+echo "v1" > notes.md
+git add notes.md
+git commit -m "init"
+
+# echo … >> notes.md — still good
+echo "v2 ok" >> notes.md
+git add notes.md
+git commit -m "add v2"
+
+# echo … >> notes.md — introduces a marker to hunt
+echo "BUG" >> notes.md
+git add notes.md
+git commit -m "introduce bug"
+
+# git blame notes.md — who last changed each line?
+git blame notes.md
+
+# test_bug.sh — exits 1 when notes.md contains BUG (bad revision)
+# grep -q BUG notes.md && exit 1 || exit 0
+
+# git bisect start — begin binary search
+git bisect start
+git bisect bad
+git bisect good HEAD~2
+
+# git bisect run ./test_bug.sh — auto-test each midpoint
+git bisect run ./test_bug.sh
+
+# git bisect reset — return to normal branch state
+git bisect reset
+```
+
+## Slide 5 — Pitfalls to watch
+
+Blame shows the last touch, not every historical edit—use log or show for deeper history. Bisect needs a reliable good and bad test; flaky tests give flaky answers. Always bisect reset when finished. And remember: the browser lab is for literacy—real RTL regressions still need your actual simulation or build as the test.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, finish a bisect to the first bad commit and read blame on the bug line. On real Git, run blame and a short bisect on your practice tree. When you are ready, take the short quiz, then continue to the next module on remotes and pull requests.

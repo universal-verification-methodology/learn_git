@@ -1,0 +1,53 @@
+{
+  "module": "module01-git-mental-model",
+  "title": "Git mental model check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "The staging area (index) is where you…",
+      "choices": [
+        "Store the remote URL forever",
+        "Prepare changes for the next commit",
+        "Edit files on disk only",
+        "Delete the .git directory"
+      ],
+      "answer": 1,
+      "explain": "git add copies changes from the working tree into the staging area for the next commit."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "HEAD usually points at…",
+      "choices": [
+        "Your text editor settings",
+        "The last recorded commit snapshot",
+        "Only untracked files",
+        "The tools index page"
+      ],
+      "answer": 1,
+      "explain": "HEAD is the current commit tip — the durable snapshot you already recorded."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Saving a file in your editor automatically creates a Git commit.",
+      "answer": false,
+      "explain": "Editor save updates the working tree; you still need add and commit to record history."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A good first practice trio for this module is…",
+      "choices": [
+        "git push, git pull, git rebase",
+        "git status, git add, git commit",
+        "chmod, chown, sudo",
+        "make, verilator, iverilog"
+      ],
+      "answer": 1,
+      "explain": "The mental-model flow is see status → stage with add → record with commit."
+    }
+  ]
+}

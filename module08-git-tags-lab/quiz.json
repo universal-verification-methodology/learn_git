@@ -1,0 +1,53 @@
+{
+  "module": "module08-git-tags-lab",
+  "title": "Tags check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A lightweight tag is…",
+      "choices": [
+        "A name pointing at a commit, without extra tag object metadata",
+        "A branch that auto-updates on every push",
+        "The same as .gitignore",
+        "Only stored on GitHub, never locally"
+      ],
+      "answer": 0,
+      "explain": "Lightweight tags are simple refs to a commit; annotated tags add message, tagger, and date."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "For a published release you share with others, prefer…",
+      "choices": [
+        "git tag -a v1.0.0 -m \"Release 1.0\"",
+        "Deleting .git and recloning",
+        "git stash clear only",
+        "Never tagging at all"
+      ],
+      "answer": 0,
+      "explain": "Annotated tags carry release metadata and are the usual choice for semver releases."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "git push alone always pushes all local tags to the remote.",
+      "answer": false,
+      "explain": "Tags are not pushed by default; use git push origin --tags or push a specific tag name."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "git show v1.0 is useful to…",
+      "choices": [
+        "Inspect which commit a tag points to (and annotation if present)",
+        "Change your shell PATH",
+        "Ignore build/ directories",
+        "Create a merge conflict automatically"
+      ],
+      "answer": 0,
+      "explain": "git show on a tag reveals the tagged commit and, for annotated tags, the tag message."
+    }
+  ]
+}

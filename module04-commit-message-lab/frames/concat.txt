@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-1.png'
+duration 17.016
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-2.png'
+duration 22.584
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-3.png'
+duration 25.896
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-4.png'
+duration 19.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-6.png'
+duration 16.488
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-7.png'
+duration 21.6
+file '/mnt/d/proj/designs/learning/courses/learn_git/module04-commit-message-lab/frames/slide-7.png'

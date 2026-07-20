@@ -1,0 +1,91 @@
+title: git log options
+footer: learn_git — git log lab
+slides:
+- type: title
+  title: git log options
+  subtitle: History is only useful if you can read it
+  notes: History is only useful if you can read it. Full `git log` dumps author blocks;
+    flags let you scan subjects, see branch shape, or focus on one file. This module
+    practices the options you will reach for before a review, a merge, or a late-night
+    debug.
+- type: bullets
+  title: Scan, graph, then zoom
+  bullets:
+  - Start with oneline for a short hash plus subject
+  - Add a count like minus five when you only need the recent tip
+  - Use graph with all to sketch how branches meet
+  - When you need detail, name-only lists paths touched
+  notes: Start with oneline for a short hash plus subject. Add a count like minus
+    five when you only need the recent tip. Use graph with all to sketch how branches
+    meet. When you need detail, name-only lists paths touched, and a path filter after
+    two dashes limits history to one file—perfect for “who last touched this RTL?”
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: git log lab starter
+  notes: 'In the browser lab, look at three pieces: the challenge card, the options
+    checkboxes—oneline, graph, and friends—and the live output pane that mirrors the
+    command line. Load the starter example, toggle a few flags, and watch the history
+    rewrite. Use Check when you think a challenge is done. You do not need a full
+    tour here—the lab itself guides the rest. Explore a few challenges, then come
+    back for the real Git track.'
+- type: image
+  title: Real Git practice
+  image: assets/real-shell.png
+  caption: Real shell — oneline, graph, and path filters
+  notes: In the real Git track, seed a tiny repo with a couple of commits on notes,
+    then print a one-line history. Limit it to the last few commits, then add graph
+    with all so you see the topology even on a short line of history. List names changed
+    in the latest commit, and finally filter the log to only commits that touched
+    the notes file. Those four views—scan, limit, graph, path—cover most day-to-day
+    history work.
+- type: code
+  title: Real Git practice — try these
+  code: '# git log --oneline — short hash plus subject for each commit
+
+    git log --oneline
+
+
+    # git log --oneline -3 — only the last three commits
+
+    git log --oneline -3
+
+
+    # git log --oneline --graph --all — compact history with branch shape
+
+    git log --oneline --graph --all
+
+
+    # git log --name-only -1 — paths touched by the latest commit
+
+    git log --name-only -1
+
+
+    # git log --oneline -- notes.md — commits that touched this path
+
+    git log --oneline -- notes.md
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not confuse a path filter, two dashes then a path, with a branch name
+  - Remember that graph without oneline can be noisy on a long history
+  - And remember
+  notes: 'Do not confuse a path filter—two dashes then a path—with a branch name.
+    Remember that graph without oneline can be noisy on a long history. And remember:
+    the browser lab is for literacy—real merges and reviews still need these flags
+    in a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, load the starter and clear a few option challenges
+  - On real Git, practice oneline, a limit, graph, and a path filter in your practice
+    tree
+  - When you are ready, take the short quiz, then continue to the next module on safe
+    undo
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load the starter and clear a few option challenges. On real Git, practice oneline,
+    a limit, graph, and a path filter in your practice tree. When you are ready, take
+    the short quiz, then continue to the next module on safe undo.

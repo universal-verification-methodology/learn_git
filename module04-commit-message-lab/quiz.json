@@ -1,0 +1,53 @@
+{
+  "module": "module04-commit-message-lab",
+  "title": "Commit message check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A good commit subject is usually…",
+      "choices": [
+        "A long paste of the entire diff",
+        "Short, imperative, and focused on the change",
+        "Only the filename you edited",
+        "Always empty so Git invents one"
+      ],
+      "answer": 1,
+      "explain": "Prefer a short imperative subject (e.g. Add mul path to ALU), not a dump of the patch."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "The commit body is best used to…",
+      "choices": [
+        "Repeat the subject in all caps",
+        "Explain why the change happened and how to verify it",
+        "Store your password",
+        "List every untracked file in the home directory"
+      ],
+      "answer": 1,
+      "explain": "Body carries context: motivation and how a reviewer can check the result."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "\"fixed stuff\" is a strong commit message for coursework delivery.",
+      "answer": false,
+      "explain": "Vague messages hide intent; future you and reviewers need a clear subject (and often a why)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "git log --oneline is useful because it shows…",
+      "choices": [
+        "Only remote URLs",
+        "A short hash plus each commit subject",
+        "Your editor theme",
+        "Only untracked files"
+      ],
+      "answer": 1,
+      "explain": "One-line log is a quick timeline of subjects—another reason to write them well."
+    }
+  ]
+}

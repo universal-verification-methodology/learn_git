@@ -1,0 +1,53 @@
+{
+  "module": "module00-intro",
+  "title": "Welcome check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Track A in this course means practice on…",
+      "choices": [
+        "Only the browser tools page",
+        "A real local Git (Linux, macOS, or WSL)",
+        "PowerPoint slides only",
+        "GitHub Issues only"
+      ],
+      "answer": 1,
+      "explain": "Track A is the real Git / real terminal track."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Track B is mainly for…",
+      "choices": [
+        "Installing Git LFS",
+        "Browser concept labs and quick feedback",
+        "Replacing real Git forever",
+        "Editing the syllabus"
+      ],
+      "answer": 1,
+      "explain": "Track B builds intuition in the browser; it does not replace real Git for commits and remotes you keep."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "You must complete both Track A and Track B for every module.",
+      "answer": false,
+      "explain": "Either track is OK for self-study; both is recommended. Later courses expect real-Git comfort with remotes and PRs."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A good first rhythm for a lab module is…",
+      "choices": [
+        "Skip the README and only watch video",
+        "Browser lab for the idea, then real Git for practice",
+        "Only copy commands without a checklist",
+        "Start with submodule pitfalls"
+      ],
+      "answer": 1,
+      "explain": "Browser first for intuition, then real Git for fidelity, is the recommended path."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-tag-tdMafC
+
+$ git init
+
+$ echo "v1" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Add notes"
+
+$ git tag v1.0
+
+$ git tag
+v1.0
+
+$ git show v1.0
+commit a19c84eff80fe8e4fda0731aac4963ae15b0aba9
+Author: Demo <demo@local>
+Date:   Mon Jul 20 14:21:38 2026 +0800
+
+    Add notes
+
+diff --git a/notes.md b/notes.md
+new file mode 100644
+index 0000000..626799f
+--- /dev/null
++++ b/notes.md
+@@ -0,0 +1 @@
++v1
+
+$ git tag -a v1.0.0 -m "Release 1.0"
+
+$ git show v1.0.0
+tag v1.0.0
+Tagger: Demo <demo@local>
+Date:   Mon Jul 20 14:21:38 2026 +0800
+
+Release 1.0
+
+commit a19c84eff80fe8e4fda0731aac4963ae15b0aba9
+Author: Demo <demo@local>
+Date:   Mon Jul 20 14:21:38 2026 +0800
+
+    Add notes
+
+diff --git a/notes.md b/notes.md
+new file mode 100644
+index 0000000..626799f
+--- /dev/null
++++ b/notes.md
+@@ -0,0 +1 @@
++v1

@@ -1,0 +1,53 @@
+{
+  "module": "module06-git-undo-safe",
+  "title": "Safe undo check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git restore notes.md (without --staged) on a modified tracked file…",
+      "choices": [
+        "Unstages the file but keeps your edits",
+        "Discards unstaged edits and matches the last committed/index state",
+        "Deletes the entire repository",
+        "Force-pushes to origin"
+      ],
+      "answer": 1,
+      "explain": "Plain restore rewinds the working tree; unstaged edits in that file are lost."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git restore --staged notes.md after git add…",
+      "choices": [
+        "Removes the file from the staging area but keeps edits on disk",
+        "Deletes the file from disk forever",
+        "Creates a new remote branch",
+        "Rewrites all commit history"
+      ],
+      "answer": 0,
+      "explain": "restore --staged only unstages; the working tree edits remain."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "git reset --hard is a good first choice when you only wanted to unstage one file.",
+      "answer": false,
+      "explain": "Hard reset is a last resort; prefer restore --staged or mixed reset when you want to keep file contents."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "After restore --staged, git status on that file should show…",
+      "choices": [
+        "Modified but not staged",
+        "Nothing—the file vanished",
+        "Only remote-tracking info",
+        "A merge conflict automatically"
+      ],
+      "answer": 0,
+      "explain": "Unstaged means the change is still in the working tree, just not in the index."
+    }
+  ]
+}

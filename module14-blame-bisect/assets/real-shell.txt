@@ -1,0 +1,50 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-bb-hPjj5i
+
+$ git init
+
+$ echo "v1" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "init"
+
+$ echo "v2 ok" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "add v2"
+
+$ echo "BUG" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "introduce bug"
+
+$ git blame notes.md
+^4c20909 (Demo 2026-07-20 14:36:45 +0800 1) v1
+dde72670 (Demo 2026-07-20 14:36:45 +0800 2) v2 ok
+8d58906d (Demo 2026-07-20 14:36:45 +0800 3) BUG
+
+$ git bisect start
+
+$ git bisect bad
+
+$ git bisect good HEAD~2
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[dde7267070e655309e4c223c13c8ce75974f9868] add v2
+
+$ git bisect run ./test_bug.sh
+running  './test_bug.sh'
+8d58906de660452cb41d2ea97d92c57a1c3553d0 is the first bad commit
+commit 8d58906de660452cb41d2ea97d92c57a1c3553d0
+Author: Demo <demo@local>
+Date:   Mon Jul 20 14:36:45 2026 +0800
+
+    introduce bug
+
+ notes.md | 1 +
+ 1 file changed, 1 insertion(+)
+bisect found first bad commit
+$ git bisect reset

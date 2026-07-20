@@ -1,0 +1,53 @@
+{
+  "module": "module12-git-cherry-pick-lab",
+  "title": "Cherry-pick check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "git cherry-pick <hash> mainly…",
+      "choices": [
+        "Applies that commit’s changes as a new commit on the current branch",
+        "Deletes the original commit everywhere",
+        "Replaces git merge for all branches",
+        "Only works on empty repositories"
+      ],
+      "answer": 0,
+      "explain": "Cherry-pick replays one commit’s patch onto HEAD, creating a new commit with a new SHA."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "After fixing cherry-pick conflicts you usually…",
+      "choices": [
+        "git add the resolved files, then git cherry-pick --continue",
+        "git stash clear only",
+        "Delete .git and recloning",
+        "Force-push main without staging"
+      ],
+      "answer": 0,
+      "explain": "Stage resolutions, then continue; use --abort to cancel the in-progress pick."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Cherry-pick moves the original commit off the source branch.",
+      "answer": false,
+      "explain": "The source commit stays; cherry-pick adds a new commit on the target branch."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Cherry-pick is a good fit when…",
+      "choices": [
+        "You need one fix from another branch, not a full merge",
+        "You want to ignore all history forever",
+        "You never know the commit hash",
+        "You only edit .gitignore"
+      ],
+      "answer": 0,
+      "explain": "Selective apply: one bugfix or backport without merging the entire branch."
+    }
+  ]
+}

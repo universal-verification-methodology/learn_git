@@ -1,0 +1,68 @@
+title: Welcome to Git for coursework
+footer: learn_git — intro
+slides:
+- type: title
+  title: Welcome to Git for coursework
+  subtitle: In coursework and delivery, you will live in Git
+  notes: In coursework and delivery, you will live in Git. You will clone a template,
+    commit progress, open a pull request, and recover when something goes wrong—all
+    from a real repository. This short clip welcomes you to learn Git, and shows how
+    the course is meant to be used.
+- type: bullets
+  title: Why Git matters
+  bullets:
+  - A submission others can reproduce
+  - Later labs, Make, simulators
+  - Getting comfortable here pays off in every later course
+  notes: Coursework is not just “save the file.” You need a history you can explain,
+    a branch you can share, and a submission others can reproduce. Later labs—Make,
+    simulators, and verification flows—assume you can commit cleanly, read a log,
+    and talk about remotes without panic. Getting comfortable here pays off in every
+    later course.
+- type: bullets
+  title: Two tracks, one idea
+  bullets:
+  - Every lab module offers two ways to practice
+  - Remotes feel real
+  - The browser lab track uses interactive tools on the learning platform
+  - You may do either track, or both
+  - The usual rhythm is browser first for the idea, then real Git for muscle memory
+  notes: Every lab module offers two ways to practice. The real Git track uses your
+    own terminal—Linux, macOS, or WSL on Windows—so commits, branches, and remotes
+    feel real. The browser lab track uses interactive tools on the learning platform,
+    so you can build intuition without installing anything. You may do either track,
+    or both. The usual rhythm is browser first for the idea, then real Git for muscle
+    memory.
+- type: bullets
+  title: Set up the real Git track
+  bullets:
+  - Open a terminal
+  - On Windows, prefer WSL, Windows Subsystem for Linux, so you get a real Unix shell
+    with Git
+  - Confirm Git is installed by asking for its version
+  - From the learn Git course folder, run the scaffold script once
+  - It does not install course tools
+  - Skim the sandbox note once, you will use a live practice repo later in the path
+  notes: Open a terminal. On Windows, prefer WSL—Windows Subsystem for Linux—so you
+    get a real Unix shell with Git. Confirm Git is installed by asking for its version.
+    From the learn Git course folder, run the scaffold script once. That script only
+    creates a small practice tree under your home directory where checklist exercises
+    can live safely; it does not install course tools. Skim the sandbox note once—you
+    will use a live practice repo later in the path.
+- type: image
+  title: Set up the browser lab track
+  image: assets/lab-tools-index.png
+  caption: Tools index
+  notes: From the monorepo, serve the platform folder with a simple local web server,
+    then open the tools index in your browser. Serving the folder means your browser
+    can load the interactive labs as ordinary web pages. If you prefer, use the published
+    tools site instead. Either way, you only need to confirm you can reach the labs—the
+    next module will send you into the Git mental model lab.
+- type: bullets
+  title: How to move through modules
+  bullets:
+  - For each module
+  - When you finish this intro checklist, continue to the first lab module
+  notes: 'For each module, read the README for the outcome, pick a track—or both—then
+    work the checklist. When you finish this intro checklist, continue to the first
+    lab module: the Git mental model.'

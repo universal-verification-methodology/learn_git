@@ -1,0 +1,53 @@
+{
+  "module": "module09-branch-strategy",
+  "title": "Branch naming check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A good feature branch name often looks like…",
+      "choices": [
+        "feature/alu-mul",
+        "My Feature Branch",
+        "random WIP",
+        "main-backup-copy-2"
+      ],
+      "answer": 0,
+      "explain": "Use a typed prefix plus a short kebab-case slug: feature/alu-mul."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "git checkout -b feature/readme-update mainly…",
+      "choices": [
+        "Deletes all commit history",
+        "Creates the branch and switches to it",
+        "Force-pushes to origin",
+        "Ignores .gitignore rules"
+      ],
+      "answer": 1,
+      "explain": "checkout -b creates a new branch at the current commit and moves HEAD there."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Work committed on a feature branch stays off main until you merge or cherry-pick it.",
+      "answer": true,
+      "explain": "Branches isolate commits; main only gains them after integration."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Before creating a branch for shared coursework, you should…",
+      "choices": [
+        "Branch from any random local tip without fetching",
+        "Update main from the remote, then branch from that tip",
+        "Delete .git first",
+        "Never use a prefix"
+      ],
+      "answer": 1,
+      "explain": "Fetch/pull so main is current, then branch from that updated tip."
+    }
+  ]
+}

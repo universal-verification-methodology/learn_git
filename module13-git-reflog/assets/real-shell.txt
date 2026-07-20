@@ -1,0 +1,43 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-rf-49uAx1
+
+$ git init
+
+$ echo "v1" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "First"
+
+$ git branch -M main
+
+$ echo "important" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "Important work"
+
+$ git reflog
+c7d7b37 HEAD@{0}: commit: Important work
+75d74b8 HEAD@{1}: Branch: renamed refs/heads/master to refs/heads/main
+75d74b8 HEAD@{3}: commit (initial): First
+
+$ git reset --hard HEAD~1
+HEAD is now at 75d74b8 First
+
+$ git log --oneline
+75d74b8 First
+
+$ git reflog
+75d74b8 HEAD@{0}: reset: moving to HEAD~1
+c7d7b37 HEAD@{1}: commit: Important work
+75d74b8 HEAD@{2}: Branch: renamed refs/heads/master to refs/heads/main
+75d74b8 HEAD@{4}: commit (initial): First
+
+$ git reset --hard HEAD@{1}
+HEAD is now at c7d7b37 Important work
+
+$ git log --oneline
+c7d7b37 Important work
+75d74b8 First

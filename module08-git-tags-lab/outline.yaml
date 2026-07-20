@@ -1,0 +1,102 @@
+title: Tags
+footer: learn_git — git tags lab
+slides:
+- type: title
+  title: Tags
+  subtitle: Tags mark a commit you want to find again, a release, a submission snapshot,
+    or a known-good point for bisect
+  notes: Tags mark a commit you want to find again—a release, a submission snapshot,
+    or a known-good point for bisect. Unlike a branch, a tag usually stays put. This
+    module practices lightweight and annotated tags, and how to list and inspect them.
+- type: bullets
+  title: Lightweight vs annotated
+  bullets:
+  - A lightweight tag is simply a name pointing at a commit, quick for local milestones
+  - An annotated tag stores a message, tagger, and date, better for releases you share
+  - Use tag to list names, show to inspect one
+  notes: A lightweight tag is simply a name pointing at a commit—quick for local milestones.
+    An annotated tag stores a message, tagger, and date—better for releases you share.
+    Use tag to list names, show to inspect one, and remember tags are not pushed with
+    a normal push—you send them explicitly.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Tags lab starter
+  notes: 'In the browser lab, look at three pieces: the challenge card, the commit
+    list, and the create panel for lightweight versus annotated tags. Load the starter
+    example, create one of each kind, then inspect with show. Use Check when you think
+    a challenge is done. You do not need a full tour here—the lab itself guides the
+    rest. Explore a few challenges, then come back for the real Git track.'
+- type: image
+  title: Real Git practice
+  image: assets/real-shell.png
+  caption: Real shell — lightweight and annotated tags
+  notes: In the real Git track, create a tiny repo with one commit. Add a lightweight
+    tag on that commit, list tags, and show what it points to. Then add an annotated
+    tag with a release message on the same commit and show again—you should see the
+    extra metadata. Those two forms are what you will use for coursework milestones
+    and semver releases.
+- type: code
+  title: Real Git practice — try these
+  code: '# git init — create a new repository here
+
+    git init
+
+
+    # echo … > notes.md — create and commit a tracked file
+
+    echo "v1" > notes.md
+
+    git add notes.md
+
+    git commit -m "Add notes"
+
+
+    # git tag v1.0 — lightweight tag on this commit
+
+    git tag v1.0
+
+
+    # git tag — list tag names
+
+    git tag
+
+
+    # git show v1.0 — inspect what the tag points to
+
+    git show v1.0
+
+
+    # git tag -a v1.0.0 -m "Release 1.0" — annotated tag with message
+
+    git tag -a v1.0.0 -m "Release 1.0"
+
+
+    # git show v1.0.0 — see tag message and commit
+
+    git show v1.0.0
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not reuse a tag name for a different commit without deleting the old one first
+  - Do not assume push sends tags, use push with tags or push the tag name explicitly
+  - Prefer annotated tags for anything you publish
+  - And remember
+  notes: 'Do not reuse a tag name for a different commit without deleting the old
+    one first. Do not assume push sends tags—use push with tags or push the tag name
+    explicitly. Prefer annotated tags for anything you publish. And remember: the
+    browser lab is for literacy—real submission tags still live in a real repo.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser
+  - On real Git, tag, list, and show in your practice tree
+  - When you are ready, take the short quiz, then continue to the next module on branch
+    naming
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load the starter and create lightweight and annotated tags on a challenge commit.
+    On real Git, tag, list, and show in your practice tree. When you are ready, take
+    the short quiz, then continue to the next module on branch naming.

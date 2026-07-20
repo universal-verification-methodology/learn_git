@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-1.png'
+duration 20.28
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-2.png'
+duration 25.776
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-3.png'
+duration 26.664
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-4.png'
+duration 15.856
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-6.png'
+duration 20.712
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-7.png'
+duration 20.496
+file '/mnt/d/proj/designs/learning/courses/learn_git/module10-git-conflicts/frames/slide-7.png'

@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-1.png'
+duration 14.832
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-2.png'
+duration 22.848
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-3.png'
+duration 26.688
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-4.png'
+duration 18.808
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-6.png'
+duration 21.288
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-7.png'
+duration 19.968
+file '/mnt/d/proj/designs/learning/courses/learn_git/module13-git-reflog/frames/slide-7.png'

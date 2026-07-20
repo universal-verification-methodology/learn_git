@@ -1,0 +1,47 @@
+{
+  "module": "module03-gitignore-lab",
+  "title": ".gitignore check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A .gitignore pattern mainly affects…",
+      "choices": [
+        "Already-committed file contents forever",
+        "Untracked paths that match the pattern",
+        "Your GitHub password",
+        "Only remote branch names"
+      ],
+      "answer": 1,
+      "explain": "Ignore rules hide matching untracked paths from status/add; tracked history needs a separate cleanup."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A good ignore set for digital design often includes…",
+      "choices": [
+        "All .v and .sv sources",
+        "build/ output, *.log, and *.vcd dumps",
+        "Only the README",
+        "The .git directory itself"
+      ],
+      "answer": 1,
+      "explain": "Build dirs, logs, and waveform dumps are regenerated and should stay out of commits."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "After you add build/ to .gitignore, an untracked build/output.tmp should disappear from git status.",
+      "answer": true,
+      "explain": "Ignored untracked paths no longer show in status even though they still exist on disk."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "If a generated file was already committed, adding it to .gitignore alone removes it from history.",
+      "answer": false,
+      "explain": "Ignore stops new tracking; removing an already-tracked file from the index/history is a separate step."
+    }
+  ]
+}

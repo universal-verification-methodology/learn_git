@@ -1,0 +1,30 @@
+# real shell session (Track A)
+
+# practice repo: /tmp/git-br-l1lcXQ
+
+$ git init
+
+$ echo "v1" > notes.md
+
+$ git add notes.md
+
+$ git commit -m "Add notes"
+
+$ git branch -M main
+
+$ git branch
+* main
+
+$ git checkout -b feature/readme-update
+
+$ echo "feature edit" >> notes.md
+
+$ git add notes.md
+
+$ git commit -m "Update notes on feature branch"
+
+$ git checkout main
+
+$ git log --oneline --all
+5ecd3dd Update notes on feature branch
+5e3dd97 Add notes

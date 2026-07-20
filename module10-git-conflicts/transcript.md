@@ -1,0 +1,71 @@
+# Module 10 — Merge conflicts
+
+**Module id:** module10-git-conflicts  
+**Lab:** git-conflicts  
+**Tracks:** A · B
+
+## Slide 1 — Merge conflicts
+
+When two branches edit the same lines, Git cannot pick a winner automatically. It stops the merge and marks the file with conflict markers. Your job is to read those markers, choose or combine the right content, then finish the merge with add and commit. This module practices that calm, step-by-step workflow.
+
+## Slide 2 — Read the markers, then resolve
+
+Look for less-than signs marking HEAD—your current branch—and greater-than signs marking the incoming branch, with equals signs in between. Edit the file until the result is what you want and every marker is gone. Stage the fixed file, then commit to complete the merge. In RTL work, conflicts often mean two people touched the same module—coordinate when you can, resolve carefully when you cannot.
+
+## Slide 3 — Browser lab
+
+![Merge conflict resolver starter](assets/lab-starter.png)
+
+In the browser lab, look at three pieces: the challenge card, the conflicted file editor, and the ours versus theirs or manual resolve buttons. Load the starter example, pick a resolution strategy, and confirm the markers are gone. Use Check when you think a challenge is done. You do not need a full tour here—the lab itself guides the rest. Explore a few challenges, then come back for the real Git track.
+
+## Slide 4 — Real Git practice
+
+![Real shell — create, resolve, and commit a merge conflict](assets/real-shell.png)
+
+In the real Git track, seed a repo, make diverging edits to the same file on main and a feature branch, then merge and watch Git report a conflict. Open the file, replace the marked sections with the text you want, stage it, and commit the merge. Finally, show a one-line graph log so you can see the merge commit in history.
+
+```bash
+# git init — create a new repository here
+git init
+
+# echo … > notes.md — shared starting content
+echo "shared" > notes.md
+git add notes.md
+git commit -m "Initial"
+git branch -M main
+
+# git checkout -b feature/conflict-test — branch for a conflicting edit
+git checkout -b feature/conflict-test
+echo "Line from feature" > notes.md
+git add notes.md
+git commit -m "Change on feature"
+
+# git checkout main — return and edit the same file differently
+git checkout main
+echo "Line from main" > notes.md
+git add notes.md
+git commit -m "Change on main"
+
+# git merge feature/conflict-test — triggers a conflict
+git merge feature/conflict-test
+
+# edit notes.md — remove markers; keep the text you want
+echo "Resolved line" > notes.md
+
+# git add notes.md — stage the resolved file
+git add notes.md
+
+# git commit -m "Resolve merge conflict" — finish the merge
+git commit -m "Resolve merge conflict"
+
+# git log --oneline --graph --all — see the merge shape
+git log --oneline --graph --all
+```
+
+## Slide 5 — Pitfalls to watch
+
+Do not commit while conflict markers remain in the file. Do not panic-delete both sides—read what each branch changed. Pull and merge main into your feature branch early to shrink conflicts before review. And remember: the browser lab is for literacy—real team merges still need the same marker-free finish in a real repo.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, load the starter and clear a few conflict regions. On real Git, create a small conflict, resolve it, and commit the merge. When you are ready, take the short quiz, then continue to the next module on rebase versus merge.
