@@ -1,6 +1,6 @@
 # Module 04 examples — Commit messages
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `add_commit_log/`
 

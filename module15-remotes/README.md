@@ -12,7 +12,7 @@ After this module you can explain and practice the ideas taught by **`remotes`**
 
 ### Track A — Real Git (hands-on)
 
-Work in a local practice repo using this module’s `examples/` (adapted from `learn_unix_git`).
+Work in a local practice repo using this module’s `examples/` (adapted from Track A examples).
 
 1. Open [EXAMPLES.md](EXAMPLES.md) and run the “Try these” commands.
 2. Complete [CHECKLIST.md](CHECKLIST.md) in `~/unix_practice/git_demo` (or your sandbox clone).

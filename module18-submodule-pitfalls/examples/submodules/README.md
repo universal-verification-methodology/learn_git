@@ -11,7 +11,7 @@ submodules/
 └── demo_repo/          # demo submodule (GitHub octocat/Hello-World)
 ```
 
-**This repo has a real submodule.** If you cloned learn_unix_git, run one of the following to populate `demo_repo/` (it may be empty until then):
+**This repo has a real submodule.** If you cloned this course, run one of the following to populate `demo_repo/` (it may be empty until then):
 
 ```bash
 git submodule update --init --recursive
@@ -93,6 +93,6 @@ See `commands_to_try.txt` for a compact list.
 
 This repository includes a **demo submodule** at `module7/examples/submodules/demo_repo` (GitHub’s [octocat/Hello-World](https://github.com/octocat/Hello-World)). Use it to practice:
 
-- **After cloning learn_unix_git:** run `git submodule update --init --recursive` or `./scripts/git-submodule-init.sh` so `demo_repo/` is populated.
+- **After cloning this course:** run `git submodule update --init --recursive` or `./scripts/git-submodule-init.sh` so `demo_repo/` is populated.
 - **Check status:** `git submodule status` or `./scripts/git-submodule-status.sh`.
 - **Inspect:** `ls demo_repo`, `cat demo_repo/README`.

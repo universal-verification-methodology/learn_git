@@ -1,7 +1,7 @@
 # Module 7 submodules — commands to try
 
 # This repo has a demo submodule at module7/examples/submodules/demo_repo (octocat/Hello-World).
-# After cloning learn_unix_git, populate it with:
+# After cloning this course, populate it with:
 git submodule update --init --recursive
 # or: ./scripts/git-submodule-init.sh
 # Then: ls module7/examples/submodules/demo_repo && cat module7/examples/submodules/demo_repo/README

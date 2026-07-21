@@ -15,7 +15,7 @@ status_diff/
 **1. Check status**
 
 ```bash
-cd ~/unix_practice/git_demo   # or cd /path/to/learn_unix_git
+cd ~/unix_practice/git_demo   # or cd /path/to/this course
 git status
 ```
 

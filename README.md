@@ -166,4 +166,4 @@ By workflow (Track B): [git-mental-model](https://universal-verification-methodo
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE).
 
-Example trees were adapted from [`learn_unix_git`](https://github.com/universal-verification-methodology/learn_unix_git) (M6–8). Platform tools and the parent monorepo may carry additional notices.
+Example trees were adapted from [`this course`](https://github.com/universal-verification-methodology/this course) (M6–8). Platform tools and the parent monorepo may carry additional notices.

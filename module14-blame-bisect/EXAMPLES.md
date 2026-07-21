@@ -1,6 +1,6 @@
 # Module 14 examples — Blame & bisect
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `blame_bisect/`
 

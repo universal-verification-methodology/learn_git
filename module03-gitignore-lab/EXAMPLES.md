@@ -1,6 +1,6 @@
 # Module 03 examples — .gitignore patterns
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `gitignore/`
 

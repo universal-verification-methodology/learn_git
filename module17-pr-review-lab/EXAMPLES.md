@@ -1,6 +1,6 @@
 # Module 17 examples — PR review checklist
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `team_workflow/`
 

@@ -1,6 +1,6 @@
 # Module 06 examples — Safe undo
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `remote_undo/`
 

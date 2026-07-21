@@ -59,4 +59,3 @@ python -m http.server 8080 --directory platform
 
 - Lab modules 01–20: examples + optional browser labs
 - Module 21 (`offline`): full sandbox rehearsal
-- Details also mirrored from legacy [`learn_unix_git/SANDBOX.md`](../learn_unix_git/SANDBOX.md)

@@ -1,6 +1,6 @@
 # Module 02 examples — Graph, stage, commit (playground)
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `init_clone/`
 

@@ -1,6 +1,6 @@
 # Module 16 examples — Remote-tracking branches
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `remote_branch/`
 

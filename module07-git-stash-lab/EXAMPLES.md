@@ -1,6 +1,6 @@
 # Module 07 examples — Stash scenarios
 
-Track A (real Git). Each folder was adapted from `learn_unix_git`.
+Track A (real Git). Each folder was adapted from Track A examples.
 
 ## `stash/`
 

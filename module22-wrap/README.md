@@ -20,7 +20,7 @@ If you mainly used **real Git**, skim any skipped browser labs for visual challe
 ## Next course
 
 → **learn_digital** or **learn_verilog** (syllabus ladder: [../../syllabus.md](../../syllabus.md#suggested-learning-ladder))  
-Unix fluency: [`../learn_unix/`](../learn_unix/). Legacy combined path: [`../learn_unix_git/`](../learn_unix_git/).
+Unix fluency: [`../learn_unix/`](../learn_unix/). 
 
 ## Checklist
 
